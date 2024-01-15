@@ -13,7 +13,11 @@ public enum Perfil {
         this.descricao = descricao;
     }
 
-    public int getCodigo() {
+    public static Perfil toEnum(Perfil x) {
+        return x;
+    }
+
+    public Perfil getCodigo() {
         return codigo;
     }
 
