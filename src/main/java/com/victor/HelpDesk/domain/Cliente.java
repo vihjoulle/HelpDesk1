@@ -1,8 +1,11 @@
 package com.victor.HelpDesk.domain;
 
+import jakarta.persistence.Entity;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Cliente extends Pessoa {
 
     private List<Chamado> chamados = new ArrayList<>();

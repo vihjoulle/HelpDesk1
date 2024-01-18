@@ -1,10 +1,13 @@
 package com.victor.HelpDesk.domain;
 
+import jakarta.persistence.Entity;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Tecnico extends Pessoa{
-
+    private static final long serialVersionID = 1L;
     private List<Chamado> chamados = new ArrayList<>();
 
     public Tecnico(){
